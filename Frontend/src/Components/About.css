@@ -1,0 +1,137 @@
+/* About.css */
+
+/* General styles */
+.About {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    height: auto;
+}
+
+.About .left {
+    text-align: left;
+    margin: auto;
+    font-size: 18px;
+    max-width: 650px;
+    font-style: oblique;
+    font-family: 'Poppins', sans-serif;
+}
+
+.About .left p {
+    font-style: oblique;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+.About .right {
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right .img-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    text-align: center;
+    gap: 10px;
+}
+
+.right .img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.right .img-stacktop {
+    grid-column: 2 / span 11;
+    grid-row: 2;
+}
+
+/* Button styling */
+.button-contact-main {
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    background-color: orange;
+    border: 2px solid black;
+    border-radius: 1px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.button-contact-main:hover {
+    background-color: black;
+    color: white;
+    font-style: oblique;
+}
+
+/* Responsive styles */
+
+/* Tablets and smaller devices */
+@media screen and (max-width: 768px) {
+    .About {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .About .left {
+        max-width: 100%;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .About .right {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .right .img-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .right .img-stacktop {
+        grid-column: 1 / span 6;
+    }
+
+    .button-contact-main {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+    .About {
+        padding: 10px;
+    }
+
+    .About .left {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .right .img-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+    }
+
+    .right .img-stacktop {
+        grid-column: 1 / span 4;
+    }
+
+    .button-contact-main {
+        font-size: 20px;
+        padding: 6px 12px;
+    }
+}

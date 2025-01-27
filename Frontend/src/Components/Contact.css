@@ -1,0 +1,178 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900px;
+    padding: 0 20px; /* Added padding to prevent content from touching the edges */
+}
+
+form {
+    max-width: 600px;
+    width: 100%; /* Adjusted width to 100% for responsiveness */
+    background-color: white;
+    padding: 25px 25px 30px;
+    border-radius: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #000000;
+    margin: 25px;
+    font-family: 'Poppins', sans-serif;
+    border: 10px ridge rgba(247, 175, 36, 0.1);
+}
+
+form h1 {
+    font-size: 65px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+form .inputbox {
+    margin-top: 25px;
+}
+
+.inputbox .field {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #000;
+    outline: none;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 20px;
+    color: #333;
+    margin-top: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.inputbox .fieldmess {
+    height: 200px;
+    resize: none;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+form button {
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    background-color: orange;
+    border: 2px solid black;
+    border-radius: 1px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: black;
+    color: white;
+}
+
+.contact {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.discuss {
+    font-size: 46px;
+    margin-top: 20px;
+    text-decoration: underline 10px orange;
+    font-style: oblique;
+}
+
+.pg {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: black;
+    background-color: #fef6e9;
+    padding: 150px;
+    font-style: oblique;
+}
+
+.pg h1 {
+    font-size: 46px;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    font-style: oblique;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .contact {
+        padding: 0 10px; /* Reduce padding on smaller screens */
+    }
+    
+    form {
+        width: 100%;
+        max-width: 100%; /* Full width on smaller devices */
+    }
+
+    form h1 {
+        font-size: 40px; /* Adjust font size */
+    }
+
+    .inputbox .field,
+    .inputbox .fieldmess {
+        font-size: 16px; /* Smaller font size on smaller screens */
+    }
+
+    form button {
+        font-size: 14px; /* Adjust button size */
+    }
+    
+    .discuss {
+        font-size: 36px; /* Reduce font size */
+    }
+    
+    .pg {
+        padding: 80px; /* Adjust padding */
+    }
+
+    .pg h1 {
+        font-size: 36px; /* Smaller heading font */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 0 5px; /* Even less padding on very small screens */
+    }
+    
+    form {
+        padding: 15px; /* Reduced padding */
+    }
+
+    form h1 {
+        font-size: 32px; /* Further adjust font size */
+    }
+
+    .inputbox .field,
+    .inputbox .fieldmess {
+        font-size: 14px; /* Even smaller font size */
+        text-align: c;
+    }
+
+    form button {
+        font-size: 12px; /* Smaller button font */
+    }
+    
+    .discuss {
+        font-size: 30px; /* Further adjust the font size */
+    }
+    
+    .pg {
+        padding: 50px; /* Reduce padding */
+    }
+
+    .pg h1 {
+        font-size: 30px; /* Smaller heading font */
+    }
+}

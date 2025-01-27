@@ -1,0 +1,133 @@
+/* General styles */
+.mask {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.into-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.mask::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+}
+
+.hero .content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 65px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.content p {
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+.button-contact {
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    background-color: orange;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-style: oblique;
+    text-decoration: none;
+}
+
+.button-contact:hover {
+    background-color: black;
+    color: white;
+    font-style: oblique;
+}
+
+.btn .button-contact {
+    margin: 0.3rem;
+}
+
+.headingtwo-HOME {
+    text-align: center;
+    font-size: 57px;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 4rem;
+    color: black;
+    font-style: oblique;
+    text-decoration: underline 10px orange;
+}
+
+/* Responsive styles */
+
+/* For tablets and smaller devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .content h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+    .button-contact {
+        font-size: 14px;
+        padding: 8px 30px;
+    }
+
+    .headingtwo-HOME {
+        font-size: 45px;
+        margin-top: 3rem;
+    }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .content h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .content p {
+        font-size: 1rem;
+        margin-top: 8px;
+    }
+
+    .button-contact {
+        font-size: 12px;
+        padding: 6px 20px;
+    }
+
+    .headingtwo-HOME {
+        font-size: 35px;
+        margin-top: 2rem;
+    }
+}

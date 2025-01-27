@@ -1,0 +1,97 @@
+.project-heading{
+    text-align: center; 
+    padding: 4rem 0 2rem 0;
+    font-size: 65px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: oblique;
+    text-decoration: underline 10px orange;
+    color: black;
+ }
+ 
+ .pro-details p{
+     font-size: 15px;
+     text-align: center; 
+    
+     font-family: 'Poppins', sans-serif;
+     color: white;
+     text-transform: uppercase;
+ }
+ .pro-title{
+     line-height: 50px;
+     text-align: center; 
+     color: white;
+     font-size: 25px;
+     text-align: center;
+     font-weight: bold;
+     font-family: 'Poppins', sans-serif;
+     font-style: oblique;
+ }
+ 
+ 
+ .project-container{
+     max-width: 1140px;
+     margin: auto;
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-gap: 40px;
+     padding-bottom: 5rem;
+ }
+  .project-card{
+     background-color: black;
+     padding:1.2rem 1rem ;
+ 
+  }
+  .project-card img{
+     width: 100%;
+ 
+  }
+  .pro-btns {
+     display: flex;
+     justify-content: center; /* Centers the buttons horizontally */
+     gap: 10px; /* Adds space between the buttons */
+ }
+ 
+ .pro-btns .button {
+     font-family: 'Poppins', sans-serif;
+     text-decoration: none;
+     font-size: 15px;
+     letter-spacing: 1px;
+     width: auto; /* Allow buttons to size automatically */
+     color: black;
+     background-color: orange;
+     border: 2px solid black;
+     border-radius: 1px;
+     padding: 10px 20px;
+     cursor: pointer;
+     transition: all 0.3s ease-in-out;
+     margin-top: 10px;
+ }
+ 
+  
+  
+  @media screen and (max-width:740px) {
+ .project-container{
+     max-width: 90%;
+     margin: auto;
+     grid-template-columns: 1fr;
+     
+ 
+ }
+  }
+ 
+  .pro-btns .button{
+ display: flex;
+ align-items: center;
+ 
+ justify-content: center;
+ 
+ 
+ 
+  }
+ 
+  .project-container{
+     display:block
+     
+  }
